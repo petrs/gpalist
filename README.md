@@ -1,7 +1,8 @@
-# gpalist [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/petrs/jcAIDScan/blob/master/LICENSE)
-An augmented output from GlobalPlatformPro tool annotated with well-known smartcard applet names and vendors
+[![Latest release](https://img.shields.io/github/release/petrs/gpalist.svg)](https://github.com/petrs/gpalist/releases/latest) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/petrs/jcAIDScan/blob/master/LICENSE) 
 
-A simple python scripts which execute marvelous [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro) by Martin Paljak, list applets available on target card (*'gp --list'*) and augment original output with names for well-known Applications Identifiers (AIDs) and Registered Application Provider Identifiers (RIDs). 
+# gpalist - an augmented output of GlobalPlatformPro tool 
+
+A simple python scripts which execute marvelous [GlobalPlatformPro](https://github.com/martinpaljak/GlobalPlatformPro) tool by Martin Paljak, list applets available on target card (*'gp --list'*) and augment original output with names for well-known Applications Identifiers (AIDs) and Registered Application Provider Identifiers (RIDs). 
 
 The well-known AIDs and RIDs are read from *well_known_aids.csv* and *well_known_rids.csv* originally compiled by [eftlab](https://www.eftlab.co.uk/) ([aid](https://www.eftlab.com.au/index.php/site-map/knowledge-base/211-emv-aid-rid-pix), [rid](https://www.eftlab.co.uk/index.php/site-map/knowledge-base/212-emv-rid)). Please create a pull request if you would like to add additional known applet AID or vendor.
 
