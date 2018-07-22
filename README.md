@@ -1,11 +1,11 @@
 # gpalist
 An augmented output from GlobalPlatformPro tool annotated with well-known smartcard applet names and vendors
 
-A simple python scripts which execute marvelous [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro) by Martin Paljak, list applets available on target card ('gp --list') and augment original output with names for well-known Applications Identifiers (AIDs) and Registered Application Provider Identifiers (RIDs). 
+A simple python scripts which execute marvelous [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro) by Martin Paljak, list applets available on target card (*'gp --list'*) and augment original output with names for well-known Applications Identifiers (AIDs) and Registered Application Provider Identifiers (RIDs). 
 
-The well-known AIDs and RIDs are read from well_known_aids.csv and well_known_rids.csv extracted from eftlab ([aid](https://www.eftlab.com.au/index.php/site-map/knowledge-base/211-emv-aid-rid-pix), [rid](https://www.eftlab.co.uk/index.php/site-map/knowledge-base/212-emv-rid)). Please create a pull request if you would like to add additional known applet AID or vendor.
+The well-known AIDs and RIDs are read from *well_known_aids.csv* and *well_known_rids.csv* originally compiled by eftlab ([aid](https://www.eftlab.com.au/index.php/site-map/knowledge-base/211-emv-aid-rid-pix), [rid](https://www.eftlab.co.uk/index.php/site-map/knowledge-base/212-emv-rid)). Please create a pull request if you would like to add additional known applet AID or vendor.
 
-Already installed [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro) is assumed. Please edit parameters GP_BASIC_COMMAND and GP_AUTH_FLAG in run.py if necessary. On Windows, set GP_BASIC_COMMAND to 'gp.exe', while on Linux, create a simple shell script containing command 'java -jar gp.jar'. GP_AUTH_FLAG is usually an empty string. If GlobalPlatform SCP authentication protocol requires different key derivation algorithm, set to to '--emv' (e.g., for G&D cards). 
+Already installed [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro) is assumed. Please edit parameters GP_BASIC_COMMAND and GP_AUTH_FLAG in run.py if necessary. On Windows, set GP_BASIC_COMMAND = 'gp.exe', while on Linux, create a simple shell script 'run_gp.sh' containing command 'java -jar gp.jar' and set GP_BASIC_COMMAND = 'run_gp.sh'. GP_AUTH_FLAG is usually an empty string. If GlobalPlatform SCP authentication protocol requires different key derivation algorithm, set to to '--emv' (e.g., for G&D cards). 
 
 ## Example
 Original output after running 'gp --list':
