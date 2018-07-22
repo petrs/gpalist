@@ -54,7 +54,14 @@ def gp_list():
 
     # print gp result in augmented mode 'AID info:'
     for line in gp_lines:
+        # older versions of gp
         match = re.match(r'AID: (?P<aid>.*?) \(', line, re.I)
+        # never version of gp with changed output
+        if not match:
+            match = re.match(r'APP: (?P<aid>.*?) \(', line, re.I)
+        if not match:
+            match = re.match(r'PKG: (?P<aid>.*?) \(', line, re.I)
+
         if match:
             # AID in output detected
             print(line)
