@@ -4,7 +4,7 @@
 
 A simple python scripts which execute marvelous [GlobalPlatformPro](https://github.com/martinpaljak/GlobalPlatformPro) tool by Martin Paljak, list applets available on target card (*'gp --list'*) and augment original output with names for well-known Applications Identifiers (AIDs) and Registered Application Provider Identifiers (RIDs). 
 
-The well-known AIDs and RIDs are read from *well_known_aids.csv* and *well_known_rids.csv* originally compiled by [eftlab](https://www.eftlab.co.uk/) ([aid](https://www.eftlab.com.au/index.php/site-map/knowledge-base/211-emv-aid-rid-pix), [rid](https://www.eftlab.co.uk/index.php/site-map/knowledge-base/212-emv-rid)). Please create a pull request if you would like to add additional known applet AID or vendor.
+The well-known AIDs and RIDs are read from *well_known_aids.csv* and *well_known_rids.csv* originally compiled by [eftlab](https://www.eftlab.co.uk/) ([aid](https://www.eftlab.com.au/knowledge-base/211-emv-aid-rid-pix/), [rid](https://www.eftlab.com.au/knowledge-base/212-emv-rid)). Please create a pull request if you would like to add additional known applet AID or vendor.
 
 ## Setup
 Already installed [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro) is assumed. The augmentation works both with older and newer output formatting.
